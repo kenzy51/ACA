@@ -1,0 +1,2527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI & Business Scaling Summit NYC 2026 — May 9 · New York City</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background: #080f1e;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 40px;
+        background: rgba(8, 15, 30, 0.97);
+        border-bottom: 1px solid rgba(0, 194, 255, 0.12);
+      }
+      .logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 17px;
+        letter-spacing: 2px;
+        color: #fff;
+      }
+      .logo span {
+        color: #00c2ff;
+        font-size: 10px;
+        display: block;
+        letter-spacing: 2px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+      }
+      .nav-r {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .nav-tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #00c2ff;
+        border: 1px solid rgba(0, 194, 255, 0.3);
+        padding: 6px 12px;
+      }
+      .nav-cta {
+        background: #d4952a;
+        color: #080f1e;
+        font-weight: 800;
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 10px 22px;
+      }
+      .nav-cta:hover {
+        background: #f0b445;
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 130px 24px 80px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hbg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse 90% 50% at 50% 0,
+            rgba(0, 194, 255, 0.07) 0,
+            transparent 60%
+          ),
+          linear-gradient(180deg, #080f1e, #050c18);
+      }
+      .hgrid {
+        position: absolute;
+        inset: 0;
+        opacity: 0.025;
+        background-image:
+          linear-gradient(rgba(0, 194, 255, 1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 194, 255, 1) 1px, transparent 1px);
+        background-size: 60px 60px;
+      }
+      .hero-in {
+        position: relative;
+        z-index: 1;
+        max-width: 900px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(0, 194, 255, 0.08);
+        border: 1px solid rgba(0, 194, 255, 0.25);
+        color: #00c2ff;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 8px 18px;
+        margin-bottom: 24px;
+      }
+      .pulse {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #00c2ff;
+        animation: blink 1.2s ease infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.2;
+        }
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #f0b445;
+        margin-bottom: 18px;
+      }
+      h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(58px, 10vw, 115px);
+        line-height: 0.88;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+      }
+      h1 .g {
+        color: #f0b445;
+      }
+      h1 .c {
+        color: #00c2ff;
+      }
+      .hero-p {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.7;
+        max-width: 640px;
+        margin: 0 auto 14px;
+      }
+      .hero-p strong {
+        color: #fff;
+      }
+      .bilingual {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: rgba(255, 255, 255, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 5px 14px;
+        margin-bottom: 36px;
+      }
+      .stats {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        margin-bottom: 40px;
+      }
+      .stat {
+        padding: 16px 28px;
+        border-right: 1px solid rgba(255, 255, 255, 0.07);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .stat:last-child {
+        border-right: none;
+      }
+      .stat-v {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 26px;
+        letter-spacing: 1px;
+      }
+      .stat-v.c {
+        color: #00c2ff;
+      }
+      .stat-v.g {
+        color: #f0b445;
+      }
+      .stat-l {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.4);
+        margin-top: 3px;
+      }
+      .btns {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn-g {
+        background: #d4952a;
+        color: #080f1e;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 16px 44px;
+        display: inline-block;
+        box-shadow: 0 4px 28px rgba(212, 149, 42, 0.3);
+        transition: 0.2s;
+        cursor: pointer;
+        border: none;
+      }
+      .btn-g:hover {
+        background: #f0b445;
+        transform: translateY(-2px);
+      }
+      .btn-o {
+        background: transparent;
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 16px 36px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: inline-block;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      .btn-o:hover {
+        border-color: #00c2ff;
+        color: #00c2ff;
+      }
+
+      .cd {
+        background: #0d1929;
+        border-top: 1px solid rgba(0, 194, 255, 0.12);
+        border-bottom: 1px solid rgba(0, 194, 255, 0.12);
+        padding: 28px 24px;
+        text-align: center;
+      }
+      .cd-l {
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #00c2ff;
+        margin-bottom: 16px;
+      }
+      .cd-row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .cdu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cdn {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 50px;
+        line-height: 1;
+        color: #fff;
+        min-width: 66px;
+        text-align: center;
+        background: rgba(0, 194, 255, 0.05);
+        border: 1px solid rgba(0, 194, 255, 0.12);
+        padding: 8px 4px;
+      }
+      .cdl {
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(0, 194, 255, 0.6);
+        margin-top: 5px;
+      }
+      .cds {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 42px;
+        color: rgba(0, 194, 255, 0.2);
+        padding-bottom: 20px;
+      }
+
+      section {
+        padding: 88px 24px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+      }
+      .wsm {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #00c2ff;
+        margin-bottom: 12px;
+      }
+      h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(38px, 6vw, 68px);
+        line-height: 0.95;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+      }
+      h2 em {
+        font-style: normal;
+        color: #f0b445;
+      }
+      h2 .c {
+        color: #00c2ff;
+      }
+      .sub {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.75;
+        margin-bottom: 52px;
+        max-width: 540px;
+      }
+
+      /* PAIN */
+      .pain {
+        background: #060d1a;
+      }
+      .g3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 2px;
+      }
+      .pc {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 36px 28px;
+        border-top: 3px solid transparent;
+        transition: 0.3s;
+      }
+      .pc:hover {
+        background: rgba(0, 194, 255, 0.04);
+        border-top-color: #00c2ff;
+      }
+      .pi {
+        font-size: 28px;
+        margin-bottom: 14px;
+      }
+      .pq {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 10px;
+      }
+      .pa {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.7;
+      }
+
+      /* GET */
+      .get {
+        background: #080f1e;
+      }
+      .g2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .gc {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 32px 28px;
+        transition: 0.3s;
+      }
+      .gc:hover {
+        border-color: rgba(212, 149, 42, 0.3);
+        transform: translateY(-3px);
+      }
+      .gn {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 48px;
+        color: rgba(212, 149, 42, 0.12);
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .gt {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .gd {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.7;
+      }
+
+      /* SESSIONS */
+      .sessions {
+        background: #060d1a;
+      }
+      .slist {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .sr {
+        display: grid;
+        grid-template-columns: 52px 1fr auto;
+        gap: 24px;
+        align-items: start;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 32px 36px;
+        border-left: 3px solid transparent;
+        transition: 0.3s;
+      }
+      .sr:hover {
+        background: rgba(0, 194, 255, 0.03);
+        border-left-color: #00c2ff;
+      }
+      .snum {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 40px;
+        color: rgba(0, 194, 255, 0.15);
+        line-height: 1;
+      }
+      .spill {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #00c2ff;
+        border: 1px solid rgba(0, 194, 255, 0.25);
+        padding: 2px 9px;
+        margin-bottom: 8px;
+      }
+      .spill.gold {
+        color: #d4952a;
+        border-color: rgba(212, 149, 42, 0.3);
+      }
+      .st {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        line-height: 1.2;
+      }
+      .sd {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.6;
+        margin-bottom: 14px;
+      }
+      .spks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+      .sp {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 4px 11px;
+        border-radius: 100px;
+        font-size: 12px;
+      }
+      .dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #d4952a;
+        flex-shrink: 0;
+      }
+      .dot.d {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      .sp.d {
+        opacity: 0.4;
+        border-style: dashed;
+      }
+      .sr-t {
+        text-align: right;
+        white-space: nowrap;
+        font-size: 10px;
+        color: #00c2ff;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      /* SPEAKERS */
+      .spk-sec {
+        background: #080f1e;
+      }
+      .sg {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 14px;
+      }
+      .sk {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 26px 18px;
+        text-align: center;
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+      .sk:hover {
+        border-color: rgba(212, 149, 42, 0.35);
+        transform: translateY(-4px);
+      }
+      .sk-star {
+        border-color: rgba(212, 149, 42, 0.4);
+        background: rgba(212, 149, 42, 0.04);
+      }
+      .sk-star::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #d4952a, transparent);
+      }
+      .sk-kt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #d4952a;
+        color: #080f1e;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        text-align: center;
+      }
+      .av {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 194, 255, 0.2),
+          rgba(17, 31, 53, 0.9)
+        );
+        border: 2px solid rgba(0, 194, 255, 0.15);
+        margin: 0 auto 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 22px;
+        color: #00c2ff;
+      }
+      .av.gold-av {
+        border-color: rgba(212, 149, 42, 0.4);
+        background: linear-gradient(
+          135deg,
+          rgba(212, 149, 42, 0.15),
+          rgba(17, 31, 53, 0.9)
+        );
+      }
+      .av.gold-av span {
+        color: #d4952a;
+      }
+      .sn {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        line-height: 1.2;
+      }
+      .sr2 {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.32);
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .bd {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 3px 9px;
+        display: inline-block;
+      }
+      .ok {
+        color: #4ade80;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+      }
+      .pnd {
+        color: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .sk2 {
+        color: #fbbf24;
+        border: 1px solid rgba(251, 191, 36, 0.2);
+      }
+      .spk-note {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.25);
+        margin-top: 8px;
+        line-height: 1.4;
+      }
+
+      /* FEATURED IN */
+      .feat {
+        background: #060d1a;
+        padding: 72px 24px;
+      }
+      .feat-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .feat-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      }
+      .feat-row:last-child {
+        border-bottom: none;
+      }
+      .feat-item {
+        padding: 22px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid rgba(255, 255, 255, 0.04);
+        flex: 1;
+        min-width: 140px;
+      }
+      .feat-item:last-child {
+        border-right: none;
+      }
+      .feat-lbl {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 18px;
+        letter-spacing: 3px;
+        color: rgba(255, 255, 255, 0.18);
+        transition: 0.3s;
+        text-align: center;
+      }
+      .feat-item:hover .feat-lbl {
+        color: rgba(255, 255, 255, 0.45);
+      }
+      .feat-sub {
+        font-size: 9px;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.08);
+        display: block;
+        text-align: center;
+        margin-top: 3px;
+        text-transform: uppercase;
+      }
+
+      /* FOR YOU */
+      .fy {
+        background: #060d1a;
+      }
+      .fyg {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 12px;
+      }
+      .fyc {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: 0.3s;
+      }
+      .fyc:hover {
+        border-color: rgba(0, 194, 255, 0.2);
+      }
+      .chk {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: rgba(74, 222, 128, 0.08);
+        border: 1px solid rgba(74, 222, 128, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4ade80;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 2px;
+      }
+      .fyt {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      /* SEEKING */
+      .seeking {
+        background: #080f1e;
+        padding: 88px 24px;
+      }
+      .seek-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2px;
+        margin-bottom: 52px;
+      }
+      .seek-c {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 36px 28px;
+        border-top: 2px solid rgba(0, 194, 255, 0.2);
+        transition: 0.3s;
+      }
+      .seek-c:hover {
+        background: rgba(0, 194, 255, 0.04);
+        border-top-color: #00c2ff;
+        transform: translateY(-3px);
+      }
+      .seek-icon {
+        font-size: 26px;
+        margin-bottom: 14px;
+      }
+      .seek-t {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .seek-d {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.38);
+        line-height: 1.7;
+      }
+      .priority-box {
+        background: linear-gradient(
+          135deg,
+          rgba(212, 149, 42, 0.07),
+          rgba(0, 194, 255, 0.04)
+        );
+        border: 1px solid rgba(212, 149, 42, 0.2);
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+      }
+      .pr-h {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #d4952a;
+        margin-bottom: 14px;
+      }
+      .button-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .btn-notched {
+        background-color: #c99747; /* Your gold color */
+        border: none;
+        padding: 25px 40px; /* Extra padding helps the clip-path look right */
+        font-family: "Inter", sans-serif; /* Or your site's bold font */
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+        min-width: 260px;
+      }
+
+      .btn-notched:hover {
+        background-color: #e0ac5a;
+        transform: translateY(-2px);
+      }
+
+      .btn-notched:active {
+        transform: translateY(0);
+      }
+      .pr-list {
+        list-style: none;
+      }
+      .pr-list li {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        line-height: 1.4;
+      }
+      .pr-list li:last-child {
+        border: none;
+      }
+      .pr-list li::before {
+        content: "▸";
+        color: #d4952a;
+        flex-shrink: 0;
+        font-size: 10px;
+      }
+
+      /* URGENCY */
+      .urg {
+        background: linear-gradient(
+          135deg,
+          rgba(192, 57, 43, 0.12),
+          rgba(212, 149, 42, 0.07)
+        );
+        border-top: 1px solid rgba(192, 57, 43, 0.2);
+        border-bottom: 1px solid rgba(192, 57, 43, 0.2);
+        padding: 52px 24px;
+        text-align: center;
+      }
+      .urg h3 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(30px, 5vw, 56px);
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+      .urg p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.52);
+        margin-bottom: 24px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* TICKETS */
+      .tix {
+        background: #0d1929;
+      }
+      .tg {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 0;
+        align-items: start;
+      }
+      .tk {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 40px 32px;
+        transition: 0.3s;
+        position: relative;
+      }
+      .tk:hover {
+        border-color: rgba(212, 149, 42, 0.28);
+      }
+      .tk.hot {
+        background: rgba(212, 149, 42, 0.06);
+        border-color: #d4952a;
+        transform: scale(1.03);
+        z-index: 1;
+        box-shadow: 0 0 56px rgba(212, 149, 42, 0.1);
+      }
+      .tkbdg {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #d4952a;
+        color: #080f1e;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 4px 16px;
+        white-space: nowrap;
+      }
+      .tktier {
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #d4952a;
+        margin-bottom: 16px;
+      }
+      .tk:not(.hot) .tktier {
+        color: rgba(255, 255, 255, 0.28);
+      }
+      .tkp {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 66px;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+      .tkp sup {
+        font-size: 32px;
+        vertical-align: top;
+        margin-top: 9px;
+        display: inline-block;
+      }
+      .tkd {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.36);
+        margin-bottom: 22px;
+        line-height: 1.6;
+        min-height: 40px;
+      }
+      .tkdiv {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.06);
+        margin-bottom: 20px;
+      }
+      .tkl {
+        list-style: none;
+        margin-bottom: 28px;
+      }
+      .tkl li {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.68);
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        line-height: 1.4;
+      }
+      .tkl li:last-child {
+        border: none;
+      }
+      .ck {
+        color: #d4952a;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .ck.d {
+        color: rgba(255, 255, 255, 0.18);
+      }
+      .tkbtn {
+        display: block;
+        text-align: center;
+        padding: 14px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        transition: 0.2s;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .bg {
+        background: #d4952a;
+        color: #080f1e;
+      }
+      .bg:hover {
+        background: #f0b445;
+      }
+      .gh {
+        background: transparent;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      .gh:hover {
+        border-color: #00c2ff;
+        color: #00c2ff;
+      }
+      .tknote {
+        text-align: center;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.2);
+        margin-top: 10px;
+      }
+
+      /* GET INVOLVED */
+      .involved {
+        background: linear-gradient(
+          160deg,
+          rgba(0, 194, 255, 0.06),
+          rgba(212, 149, 42, 0.04),
+          rgba(8, 15, 30, 0.9)
+        );
+        padding: 88px 24px;
+        text-align: center;
+      }
+      .inv-btns {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      .inv-btn {
+        padding: 16px 36px;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        display: inline-block;
+      }
+      .inv-btn.primary {
+        background: #d4952a;
+        color: #080f1e;
+        box-shadow: 0 4px 28px rgba(212, 149, 42, 0.25);
+      }
+      .inv-btn.primary:hover {
+        background: #f0b445;
+        transform: translateY(-2px);
+      }
+      .inv-btn.secondary {
+        background: transparent;
+        color: #00c2ff;
+        border: 1px solid rgba(0, 194, 255, 0.3);
+      }
+      .inv-btn.secondary:hover {
+        background: rgba(0, 194, 255, 0.06);
+        border-color: #00c2ff;
+      }
+      .inv-btn.ghost {
+        background: transparent;
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .inv-btn.ghost:hover {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* DELEGATIONS */
+      .del {
+        background: #080f1e;
+      }
+      .dg {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 10px;
+      }
+      .dc {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 20px;
+        transition: 0.3s;
+      }
+      .dc:hover {
+        border-color: rgba(0, 194, 255, 0.18);
+      }
+      .di {
+        font-size: 22px;
+        flex-shrink: 0;
+      }
+      .dn {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+      .dd {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.3);
+        line-height: 1.4;
+      }
+      .ds {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        display: inline-block;
+      }
+      .grn {
+        color: #4ade80;
+      }
+      .yllw {
+        color: #fbbf24;
+      }
+
+      /* FAQ */
+      .faq {
+        background: #060d1a;
+      }
+      .fl {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        max-width: 720px;
+      }
+      .fi {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .fq {
+        width: 100%;
+        background: none;
+        border: none;
+        color: #fff;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        padding: 20px 24px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+      }
+      .fq:hover {
+        color: #00c2ff;
+      }
+      .fi-icon {
+        font-size: 16px;
+        color: #00c2ff;
+        flex-shrink: 0;
+        transition: transform 0.25s;
+      }
+      .fa {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.35s ease,
+          padding 0.25s;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.48);
+        line-height: 1.75;
+        padding: 0 24px;
+      }
+      .fi.open .fa {
+        max-height: 200px;
+        padding: 0 24px 20px;
+      }
+      .fi.open .fi-icon {
+        transform: rotate(45deg);
+      }
+
+      /* MODAL */
+      .modal-bg {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s;
+      }
+      .modal-bg.open {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .modal {
+        background: #0d1929;
+        border: 1px solid rgba(0, 194, 255, 0.2);
+        padding: 48px;
+        max-width: 520px;
+        width: 100%;
+        position: relative;
+      }
+      .modal h3 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 36px;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+      }
+      .modal p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 28px;
+      }
+      .modal-close {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .modal-close:hover {
+        color: #fff;
+      }
+      .mf {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .mf input,
+      .mf select,
+      .mf textarea {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+        padding: 14px 16px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 13px;
+        outline: none;
+        transition: 0.2s;
+        width: 100%;
+      }
+      .mf input:focus,
+      .mf select:focus,
+      .mf textarea:focus {
+        border-color: rgba(0, 194, 255, 0.4);
+      }
+      .mf select option {
+        background: #0d1929;
+      }
+      .mf textarea {
+        resize: vertical;
+        min-height: 90px;
+      }
+      .mf .sub-btn {
+        background: #d4952a;
+        color: #080f1e;
+        border: none;
+        padding: 15px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        transition: 0.2s;
+      }
+      .mf .sub-btn:hover {
+        background: #f0b445;
+      }
+      .success-msg {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        color: #4ade80;
+        font-weight: 600;
+      }
+
+      .fcta {
+        background: linear-gradient(
+          160deg,
+          rgba(0, 194, 255, 0.05),
+          rgba(212, 149, 42, 0.05),
+          rgba(8, 15, 30, 0.9)
+        );
+        border-top: 1px solid rgba(0, 194, 255, 0.1);
+        padding: 88px 24px;
+        text-align: center;
+      }
+
+      footer {
+        background: #030810;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+        padding: 44px 24px;
+        text-align: center;
+      }
+      footer p {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.18);
+        line-height: 2;
+      }
+      footer a {
+        color: rgba(0, 194, 255, 0.4);
+      }
+      footer a:hover {
+        color: #00c2ff;
+      }
+
+      .rev {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+      .rev.vis {
+        opacity: 1;
+        transform: none;
+      }
+
+      @media (max-width: 680px) {
+        nav {
+          padding: 12px 16px;
+        }
+        .nav-tag {
+          display: none;
+        }
+        section {
+          padding: 64px 16px;
+        }
+        .hero {
+          padding: 110px 16px 60px;
+        }
+        .stat {
+          padding: 12px 16px;
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        .stat:last-child {
+          border-bottom: none;
+        }
+        .sr {
+          grid-template-columns: 1fr;
+          gap: 10px;
+          padding: 24px 20px;
+        }
+        .snum {
+          font-size: 32px;
+        }
+        .sr-t {
+          text-align: left;
+        }
+        .tk.hot {
+          transform: none;
+        }
+        .tg {
+          grid-template-columns: 1fr;
+        }
+        .priority-box {
+          grid-template-columns: 1fr;
+        }
+        .feat-item {
+          min-width: 100px;
+          padding: 16px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- MODAL -->
+    <div class="modal-bg" id="modal">
+      <div class="modal">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <h3 id="modal-title">Get Involved</h3>
+        <p id="modal-sub">
+          Fill out the form and our team will be in touch within 48 hours.
+        </p>
+        <div class="mf" id="modal-form">
+          <input type="text" placeholder="Full Name" id="f-name" />
+          <input type="email" placeholder="Email Address" id="f-email" />
+          <input type="text" placeholder="Company / Organization" id="f-co" />
+          <select id="f-type">
+            <option value="">I am interested in...</option>
+            <option>Becoming a Speaker</option>
+            <option>Becoming a Sponsor</option>
+            <option>General Inquiry</option>
+            <option>Media / Press</option>
+            <option>Partnership</option>
+          </select>
+          <textarea
+            placeholder="Tell us about yourself and your interest in the summit..."
+            id="f-msg"
+          ></textarea>
+          <button class="sub-btn" onclick="submitForm()">Submit →</button>
+        </div>
+        <div class="success-msg" id="success-msg">
+          ✓ Thank you! We'll be in touch within 48 hours.
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="logo">
+        AI & Business Scaling Summit NYC 2026<span
+          >▸ Hosted by ACABA · May 9, 2026 · Chelsea, NYC</span
+        >
+      </div>
+      <div class="nav-r">
+        <span class="nav-tag">#AIWeekNewYork</span>
+        <a
+          href="https://www.americancabusiness.com/events/ai-business-scaling-summit"
+          target="_blank"
+          class="nav-cta"
+          >Get Tickets</a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+<div class="hbg" style="
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: linear-gradient(to bottom, rgba(5, 10, 24, 0.6), rgba(5, 10, 24, 0.9)), 
+                url('background.png'); /* CHANGE THIS TO YOUR BG FILENAME */
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1;
+  "></div>      <div class="hgrid"></div>
+      <div class="hero-in">
+        <div class="badge">
+          <span class="pulse"></span>#AIWeekNewYork · Hosted by ACABA · May 9,
+          2026
+        </div>
+        <div class="eyebrow">
+          New York City · Chelsea · English &amp; Russian
+        </div>
+        <h1>
+          AI &amp;<br /><span class="g">Business</span><br /><span class="c"
+            >Scaling</span
+          ><br />Summit
+        </h1>
+        <p class="hero-p">
+          A full-day summit where
+          <strong>AI meets business strategy.</strong> Learn to use AI as a
+          growth tool, access real capital, scale your business, and network
+          with 270 entrepreneurs and professionals — hosted by ACABA,
+          <strong>open to everyone.</strong>
+        </p>
+        <div class="bilingual">
+          🌐 Bilingual — English &amp; Russian · Hosted by ACABA · Open to All
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-v c">May 9</div>
+            <div class="stat-l">2026</div>
+          </div>
+          <div class="stat">
+            <div class="stat-v">Chelsea</div>
+            <div class="stat-l">New York City</div>
+          </div>
+          <div class="stat">
+            <div class="stat-v g">270</div>
+            <div class="stat-l">Seats Only</div>
+          </div>
+          <div class="stat">
+            <div class="stat-v">4</div>
+            <div class="stat-l">Sessions</div>
+          </div>
+          <div class="stat">
+            <div class="stat-v c">#AIWeekNewYork</div>
+            <div class="stat-l">Official Event</div>
+          </div>
+        </div>
+        <div class="btns">
+          <a href="#tickets" class="btn-g">Secure My Seat Now →</a>
+          <a href="#sessions" class="btn-o">View the Program</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <div class="cd">
+      <div class="cd-l">⚡ Summit Begins In</div>
+      <div class="cd-row">
+        <div class="cdu">
+          <div class="cdn" id="dd">00</div>
+          <div class="cdl">Days</div>
+        </div>
+        <div class="cds">:</div>
+        <div class="cdu">
+          <div class="cdn" id="dh">00</div>
+          <div class="cdl">Hours</div>
+        </div>
+        <div class="cds">:</div>
+        <div class="cdu">
+          <div class="cdn" id="dm">00</div>
+          <div class="cdl">Minutes</div>
+        </div>
+        <div class="cds">:</div>
+        <div class="cdu">
+          <div class="cdn" id="ds">00</div>
+          <div class="cdl">Seconds</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAIN -->
+    <section class="pain">
+      <div class="wrap">
+        <div class="tag rev">Sound Familiar?</div>
+        <h2 class="rev">
+          AI. Business. Growth.<br /><em>All in One Room.</em>
+        </h2>
+        <div class="g3 rev">
+          <div class="pc">
+            <div class="pi">🚀</div>
+            <div class="pq">
+              "I want to start a business but don't know where to begin."
+            </div>
+            <div class="pa">
+              One day of real strategy, real speakers, and practical frameworks
+              to help you launch with confidence.
+            </div>
+          </div>
+          <div class="pc">
+            <div class="pi">📈</div>
+            <div class="pq">
+              "My business is stuck. I need to scale but I don't know how."
+            </div>
+            <div class="pa">
+              Growth playbooks, funding strategies, and mentorship resources
+              that successful founders wish they found earlier.
+            </div>
+          </div>
+          <div class="pc">
+            <div class="pi">💰</div>
+            <div class="pq">
+              "I need capital but have no idea how to access it."
+            </div>
+            <div class="pa">
+              Sit with SCORE advisors and financial leaders who walk you through
+              grants, funding, and investment step by step.
+            </div>
+          </div>
+          <div class="pc">
+            <div class="pi">🤖</div>
+            <div class="pq">
+              "Everyone talks about AI. How does it actually apply to my
+              business?"
+            </div>
+            <div class="pa">
+              Our AI panel cuts through the hype with practical tools to
+              automate, market, and scale — starting tomorrow.
+            </div>
+          </div>
+          <div class="pc">
+            <div class="pi">🤝</div>
+            <div class="pq">
+              "I work hard but I don't have the right connections."
+            </div>
+            <div class="pa">
+              270 entrepreneurs, investors, and professionals in one room. One
+              conversation here can change your trajectory.
+            </div>
+          </div>
+          <div class="pc">
+            <div class="pi">🔄</div>
+            <div class="pq">
+              "I'm ready for a career change or pivot — but where do I start?"
+            </div>
+            <div class="pa">
+              Real frameworks, real community, and people who've made the same
+              leap and built something on the other side.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU GET -->
+    <section class="get">
+      <div class="wrap">
+        <div class="tag rev">What You'll Walk Away With</div>
+        <h2 class="rev">One Day.<br /><em>Real Results.</em></h2>
+        <p class="sub rev">
+          No fluff. No theory. Actionable strategies, real connections, and a
+          plan you can execute the moment you leave.
+        </p>
+        <div class="g2 rev">
+          <div class="gc">
+            <div class="gn">01</div>
+            <div class="gt">A Plan to Start, Scale, or Fund Your Business</div>
+            <div class="gd">
+              Leave with a concrete strategy — not just inspiration. A real
+              roadmap you can execute starting the next day.
+            </div>
+          </div>
+          <div class="gc">
+            <div class="gn">02</div>
+            <div class="gt">AI as a Practical Business Tool</div>
+            <div class="gd">
+              Learn exactly how to use AI to automate, market, and grow —
+              without needing a tech background or big budget.
+            </div>
+          </div>
+          <div class="gc">
+            <div class="gn">03</div>
+            <div class="gt">Funding &amp; Capital Strategies</div>
+            <div class="gd">
+              Access grants, navigate SCORE resources, and learn what investors
+              actually look for before they write a check.
+            </div>
+          </div>
+          <div class="gc">
+            <div class="gn">04</div>
+            <div class="gt">A Network That Opens Real Doors</div>
+            <div class="gd">
+              270 people in one room — founders, investors, and professionals.
+              Rooted in the Central Asian business community, open to all.
+            </div>
+          </div>
+          <div class="gc">
+            <div class="gn">05</div>
+            <div class="gt">Business Connections Across Cultures</div>
+            <div class="gd">
+              A bilingual, international room of driven people building in
+              America — where your background is an asset, not a barrier.
+            </div>
+          </div>
+          <div class="gc">
+            <div class="gn">06</div>
+            <div class="gt">Clarity to Make Your Next Move</div>
+            <div class="gd">
+              Whether launching, pivoting, or scaling — you'll leave knowing
+              your next step and feeling equipped to take it.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SESSIONS -->
+    <section class="sessions" id="sessions">
+      <div class="wrap">
+        <div class="tag rev">The Program — May 9, 2026</div>
+        <h2 class="rev">Four Sessions.<br /><em>AI Meets Business.</em></h2>
+        <p class="sub rev">
+          Capital. AI. Community. Keynotes. Every session is designed to give
+          you something you can execute immediately.
+        </p>
+        <div class="slist rev">
+          <div class="sr">
+            <div class="snum">01</div>
+            <div>
+              <div class="spill gold">Capital Panel</div>
+              <div class="st">
+                Business Capital: Fund, Scale &amp; Grow in America
+              </div>
+              <div class="sd">
+                This is the panel that changes everything. We're bringing
+                together the full capital ecosystem in one room — angel
+                investors, grant experts, SBA-backed advisors, insurance
+                strategists, and entrepreneurs who've already built
+                million-dollar businesses. Whether you're pre-revenue or scaling
+                past your first million, this panel is designed to get your
+                company investment-ready, fundable, and built to last. No
+                gatekeeping. No jargon. Just the people, strategies, and
+                resources that actually move money.
+              </div>
+              <div class="spks">
+                <span class="sp"
+                  ><span class="dot"></span>Senior Representative, SCORE — U.S.
+                  SBA Partner</span
+                >
+                <span class="sp"
+                  ><span class="dot"></span>Senior Executive, New York Life
+                  Insurance</span
+                >
+                <span class="sp d"
+                  ><span class="dot d"></span>Angel Investor (Confirming)</span
+                >
+                <span class="sp d"
+                  ><span class="dot d"></span>$1M+ Entrepreneur
+                  (Confirming)</span
+                >
+              </div>
+            </div>
+            <div class="sr-t">PANEL</div>
+          </div>
+
+          <div class="sr">
+            <div class="snum">02</div>
+            <div>
+              <div class="spill">AI Panel</div>
+              <div class="st">
+                AI &amp; The Future of Business: Use It or Lose to It
+              </div>
+              <div class="sd">
+                Featuring a Stanford GSB and Harvard Kennedy School graduate who
+                has helped hundreds of founders enter Silicon Valley and secure
+                global funding. This panel cuts through AI hype with real tools
+                to automate, market, and grow — zero tech background required.
+              </div>
+              <div class="spks">
+                <span class="sp"
+                  ><span class="dot"></span>Asset Abdualiyev — Co-Founder &amp;
+                  CEO, Silkroad Innovation Hub</span
+                >
+                <span class="sp d"></span>
+                  
+                  <span class="dot d"></span>Marina Mogilko — Pending (Silicon
+                  Valley Girl / LinguaTrip)</span
+                >
+              </div>
+            </div>
+            <div class="sr-t">PANEL</div>
+          </div>
+
+          <div class="sr">
+            <div class="snum">03</div>
+            <div>
+              <div class="spill">Community Panel</div>
+              <div class="st">Community Is the New Currency</div>
+              <div class="sd">
+                In a world where AI levels the technical playing field,
+                relationships become your ultimate competitive advantage. Learn
+                to build community that compounds into real capital,
+                opportunity, and long-term business leverage.
+              </div>
+              <div class="spks">
+                <span class="sp d"
+                  ><span class="dot d"></span>Speakers to be announced</span
+                >
+              </div>
+            </div>
+            <div class="sr-t">PANEL</div>
+          </div>
+
+          <div class="sr">
+            <div class="snum">04</div>
+            <div>
+              <div class="spill gold">Keynote</div>
+              <div class="st">Keynote Presenters</div>
+              <div class="sd">
+                Closing keynotes from entrepreneurs and leaders who've built
+                something extraordinary — real stories, real numbers, and a
+                vision that sends you home ready to execute.
+              </div>
+              <div class="spks">
+                <span class="sp d"
+                  ><span class="dot d"></span>Keynote speakers to be
+                  announced</span
+                >
+              </div>
+            </div>
+            <div class="sr-t">KEYNOTE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section class="spk-sec" id="speakers">
+      <div class="wrap">
+        <div class="tag rev">Speakers</div>
+        <h2 class="rev">Learn From People<br /><em>Who've Done It.</em></h2>
+        <p class="sub rev">
+          Confirmed speakers joining us May 9th. Additional speakers announced
+          weekly.
+        </p>
+        <div class="sg rev">
+          <div class="sk" style="border-color: rgba(0, 194, 255, 0.2)">
+            <div class="av"><span>AA</span></div>
+            <div class="sn">Asset Abdualiyev</div>
+            <div class="sr2">
+              Co-Founder &amp; CEO, Silkroad Innovation Hub · Stanford GSB ·
+              Harvard Kennedy School · ex-McKinsey · ex-TaskRabbit
+            </div>
+            <div class="bd ok">✓ Confirmed · AI Panel</div>
+            <div
+              class="spk-note"
+              style="
+                margin-top: 8px;
+                font-size: 11px;
+                color: rgba(0, 194, 255, 0.4);
+              "
+            >
+              Silicon Valley ecosystem builder connecting Central Eurasian
+              startups with global capital
+            </div>
+          </div>
+
+          <div class="sk sk-star">
+            <div class="sk-kt">⭐ Featured Speaker — Pending</div>
+            <div class="av gold-av" style="margin-top: 18px">
+              <span>MM</span>
+            </div>
+            <div class="sn">Marina Mogilko</div>
+            <div class="sr2">
+              Co-Founder, LinguaTrip · Silicon Valley Girl · Official Creator,
+              World Economic Forum (Davos 2026) · Millions of YouTube
+              subscribers worldwide
+            </div>
+            <div class="bd sk2">● Pending Confirmation</div>
+            <div
+              class="spk-note"
+              style="
+                margin-top: 8px;
+                font-size: 11px;
+                color: rgba(251, 191, 36, 0.35);
+              "
+            >
+              Where media, technology, and business converge — a voice for the
+              next generation of global founders
+            </div>
+          </div>
+
+          <div class="sk">
+            <div class="av"><span>SC</span></div>
+            <div class="sn">Senior Representative, SCORE</div>
+            <div class="sr2">
+              Capital Access · Small Business Growth · Advisory · Backed by the
+              U.S. Small Business Administration
+            </div>
+            <div class="bd ok">✓ Confirmed · Capital Panel</div>
+          </div>
+
+          <div class="sk">
+            <div class="av"><span>NL</span></div>
+            <div class="sn">Senior Executive, New York Life</div>
+            <div class="sr2">
+              Financial Strategy · Business Protection · Wealth Planning · New
+              York Life Insurance Company
+            </div>
+            <div class="bd ok">✓ Confirmed · Capital Panel</div>
+          </div>
+
+          <div class="sk">
+            <div class="av" style="font-size: 24px">+</div>
+            <div class="sn">More Speakers</div>
+            <div class="sr2">
+              AI, Capital &amp; Community panelists being confirmed now
+            </div>
+            <div class="bd sk2">⟳ Announcing Soon</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED IN -->
+    <section class="feat">
+      <div class="wrap">
+        <div class="tag rev" style="text-align: center; display: block">
+          Our Speakers Have Been Featured In
+        </div>
+        <div style="height: 32px"></div>
+        <div class="feat-grid rev">
+          <div class="feat-row">
+            <div class="feat-item">
+              <div>
+                <div class="feat-lbl">DAVOS</div>
+                <div class="feat-sub">World Economic Forum</div>
+              </div>
+            </div>
+            <div class="feat-item">
+              <div>
+                <div class="feat-lbl">TECHCRUNCH</div>
+                <div class="feat-sub">Global Tech Media</div>
+              </div>
+            </div>
+            <div class="feat-item">
+              <div>
+                <div class="feat-lbl">YOUTUBE</div>
+                <div class="feat-sub">Millions of Subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="feat-row">
+            <div class="feat-item">
+              <div>
+                <div class="feat-lbl">SILICON VALLEY</div>
+                <div class="feat-sub">Startup Ecosystem</div>
+              </div>
+            </div>
+            <div class="feat-item">
+              <div>
+                <div class="feat-lbl">GOOGLE</div>
+                <div class="feat-sub">Global Innovation</div>
+              </div>
+            </div>
+            <div class="feat-item">
+              <div>
+                <div class="feat-lbl">META</div>
+                <div class="feat-sub">Technology Platform</div>
+              </div>
+            </div>
+          </div>
+          <div class="feat-row">
+            <div class="feat-item">
+              <div>
+                <div class="feat-lbl">TECHCRUNCH DISRUPT</div>
+                <div class="feat-sub">Premier Tech Conference</div>
+              </div>
+            </div>
+            <div class="feat-item" style="flex: 2">
+              <div>
+                <div class="feat-lbl">ORGANIZATION OF TURKIC STATES</div>
+                <div class="feat-sub">International Institution</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR YOU -->
+    <section class="fy">
+      <div class="wrap">
+        <div class="tag rev">This Is For You If...</div>
+        <h2 class="rev">You're Here to<br /><em>Build Something Real.</em></h2>
+        <div class="fyg rev">
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              You want to start a business and need a real, executable plan
+            </div>
+          </div>
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              Your business is running but you need to scale it faster
+            </div>
+          </div>
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              You want to use AI in your business but don't know where to start
+            </div>
+          </div>
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              You need funding and want to know exactly how to access it
+            </div>
+          </div>
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              You're part of the Central Asian business community and want to
+              connect with your people
+            </div>
+          </div>
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              You're not Central Asian but want to network with a driven,
+              international community
+            </div>
+          </div>
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              You speak Russian and want a bilingual space where you fully
+              belong
+            </div>
+          </div>
+          <div class="fyc">
+            <div class="chk">✓</div>
+            <div class="fyt">
+              You're ready to be in the room where deals are made and doors open
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVELY SEEKING -->
+    <section class="seeking">
+      <div class="wrap">
+        <div class="tag rev">Open Opportunities</div>
+        <h2 class="rev">We Are Actively<br /><em>Seeking.</em></h2>
+        <p class="sub rev">
+          This summit is being built with intention. We are curating the right
+          people — not just filling seats. If this sounds like you, we want to
+          hear from you.
+        </p>
+        <div class="seek-grid rev">
+          <div class="seek-c">
+            <div class="seek-icon">🎤</div>
+            <div class="seek-t">AI Speakers</div>
+            <div class="seek-d">
+              Practitioners and founders using AI to drive real business
+              outcomes. No academics. No theory. Results only.
+            </div>
+          </div>
+          <div class="seek-c">
+            <div class="seek-icon">🎙️</div>
+            <div class="seek-t">Panel Moderators</div>
+            <div class="seek-d">
+              Experienced professionals who can lead high-level conversations
+              and draw out insight from top panelists.
+            </div>
+          </div>
+          <div class="seek-c">
+            <div class="seek-icon">🤝</div>
+            <div class="seek-t">Sponsors</div>
+            <div class="seek-d">
+              Brands and institutions that want direct access to 270
+              entrepreneurs, founders, and decision-makers in one room.
+            </div>
+          </div>
+          <div class="seek-c">
+            <div class="seek-icon">💼</div>
+            <div class="seek-t">$1M+ Business Owners</div>
+            <div class="seek-d">
+              Founders generating $1M or more in revenue who want to share their
+              story and lead by example on stage.
+            </div>
+          </div>
+        </div>
+        <div class="priority-box rev">
+          <div>
+            <div class="pr-h">Priority Communities</div>
+            <ul class="pr-list">
+              <li>Central Asian founders &amp; entrepreneurs</li>
+              <li>Russian-speaking business owners</li>
+              <li>International operators entering the U.S.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pr-h">What We Offer Speakers</div>
+            <ul class="pr-list">
+              <li>Stage at a #AIWeekNewYork event</li>
+              <li>Access to 270 qualified professionals</li>
+              <li>Bilingual media coverage &amp; exposure</li>
+            </ul>
+          </div>
+          <div>
+            <div class="pr-h">What We Offer Sponsors</div>
+            <ul class="pr-list">
+              <li>Brand positioning at a premium summit</li>
+              <li>Direct access to Central Asian business leaders</li>
+              <li>7 social media posts via influencers</li>
+              <li>
+                5 journal &amp; media publications — USA &amp; International
+              </li>
+              <li>Premium logo placement on event banner</li>
+              <li>Maximum visibility across all marketing channels</li>
+              <li>Custom partnership packages available</li>
+            </ul>
+          </div>
+        </div>
+        <div class="button-row">
+          <a href="https://www.americancabusiness.com/sponsors" target="_blank">
+            <button class="btn-g btn-notched">Apply to Sponsor →</button>
+          </a>
+          <a
+            href="https://www.americancabusiness.com/applyforsponsorship"
+            target="_blank"
+          >
+            <button class="btn-g btn-notched">Apply to Speak →</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- URGENCY -->
+    <div class="urg">
+      <div class="wsm">
+        <h3>
+          270 Seats. <span style="color: #f0b445">One Day.</span> No Replay.
+        </h3>
+        <p>
+          In-person only. No livestream, no recording. When the room is full,
+          it's full.
+        </p>
+        <a href="#tickets" class="btn-g">Reserve My Seat Before It's Gone →</a>
+      </div>
+    </div>
+
+    <!-- TICKETS -->
+    <section class="tix" id="tickets">
+      <div class="wrap">
+        <div class="tag rev">Tickets</div>
+        <h2 class="rev">Your Investment.<br /><em>Your Future.</em></h2>
+        <p class="sub rev">Three tiers. One day that changes everything.</p>
+        <div class="tg rev">
+          <div class="tk">
+            <div class="tktier">Student</div>
+            <div class="tkp"><sup>$</sup>30</div>
+            <div class="tkd">
+              For the next generation. Extremely limited spots.
+            </div>
+            <div class="tkdiv"></div>
+            <ul class="tkl">
+              <li>
+                <span class="ck">✓</span>Full access to all sessions &amp;
+                speakers
+              </li>
+              <li><span class="ck">✓</span>Complimentary coffee</li>
+              <li>
+                <span class="ck">✓</span>Networking with founders &amp;
+                professionals
+              </li>
+              <li>
+                <span class="ck d">✓</span>Valid student ID required at check-in
+              </li>
+            </ul>
+            <a href="https://www.americancabusiness.com/events/ai-business-scaling-summit" target="_blank">
+                <button class="tkbtn gh">
+              Claim Student Ticket
+            </button>
+            </a>
+          
+            <div class="tknote">⚠ Very limited — first come, first served</div>
+          </div>
+          <div class="tk hot">
+            <div class="tkbdg">🔥 Best Value</div>
+            <div class="tktier">VIP</div>
+            <div class="tkp"><sup>$</sup>250</div>
+            <div class="tkd">
+              The full experience. Premium access, lounge, and exclusive
+              networking all day.
+            </div>
+            <div class="tkdiv"></div>
+            <ul class="tkl">
+              <li><span class="ck">✓</span>All sessions &amp; speakers</li>
+              <li>
+                <span class="ck">✓</span>Exclusive 1-on-1 with speakers &amp;
+                organizers
+              </li>
+              <li><span class="ck">✓</span>VIP Lounge access</li>
+              <li>
+                <span class="ck">✓</span>Unlimited coffee, water &amp; snacks
+                backstage
+              </li>
+              <li><span class="ck">✓</span>Lunch included</li>
+              <li><span class="ck">✓</span>Exclusive welcome gift bag</li>
+              <li><span class="ck">✓</span>Priority seating</li>
+              <li>
+                <span class="ck">✓</span>Premium networking with investors &amp;
+                leaders
+              </li>
+            </ul>
+            <a href="https://www.americancabusiness.com/events/ai-business-scaling-summit" target="_blank">
+            <button class="tkbtn bg" >
+              Secure My VIP Ticket →
+            </button>
+            </a>
+          
+            <div class="tknote">Limited seats · Reserve early</div>
+          </div>
+          <div class="tk">
+            <div class="tktier">General Admission</div>
+            <div class="tkp"><sup>$</sup>99</div>
+            <div class="tkd">
+              Full event access. All sessions, all speakers, all the networking.
+            </div>
+            <div class="tkdiv"></div>
+            <ul class="tkl">
+              <li>
+                <span class="ck">✓</span>Full access to all sessions &amp;
+                speakers
+              </li>
+              <li><span class="ck">✓</span>Complimentary coffee</li>
+              <li><span class="ck">✓</span>Open networking all day</li>
+            </ul>
+           <a href="https://www.americancabusiness.com/events/ai-business-scaling-summit" target="_blank">
+            <button class="tkbtn gh" >
+              Get General Ticket
+            </button>
+            </a>
+
+            <div class="tknote">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DELEGATIONS -->
+    <section class="del">
+      <div class="wrap">
+        <div class="tag rev">Also In The Room</div>
+        <h2 class="rev">High-Level Guests<br /><em>&amp; Delegations.</em></h2>
+        <p class="sub rev">
+          Official representatives, international media, and institutional
+          leaders joining us.
+        </p>
+        <div class="dg rev">
+          <div class="dc">
+            <div class="di">🏛️</div>
+            <div>
+              <div class="dn">NYC Mayor's Office</div>
+              <div class="dd">
+                Official delegation. Mayor Mamdani's attendance being explored.
+              </div>
+              <span class="ds yllw">● Pending</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">🇰🇿</div>
+            <div>
+              <div class="dn">Embassy of Kazakhstan</div>
+              <div class="dd">Official diplomatic delegation</div>
+              <span class="ds grn">● Confirmed</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">🇺🇿</div>
+            <div>
+              <div class="dn">Embassy of Uzbekistan</div>
+              <div class="dd">Official diplomatic delegation</div>
+              <span class="ds yllw">● Pending</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">🇰🇬</div>
+            <div>
+              <div class="dn">Embassy of Kyrgyzstan</div>
+              <div class="dd">Official diplomatic delegation</div>
+              <span class="ds yllw">● Pending</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">🇹🇯</div>
+            <div>
+              <div class="dn">Embassy of Tajikistan</div>
+              <div class="dd">Official diplomatic delegation</div>
+              <span class="ds yllw">● Pending</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">🇹🇲</div>
+            <div>
+              <div class="dn">Embassy of Turkmenistan</div>
+              <div class="dd">Official diplomatic delegation</div>
+              <span class="ds yllw">● Pending</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">🤝</div>
+            <div>
+              <div class="dn">Qaztrade</div>
+              <div class="dd">Kazakhstan's national trade organization</div>
+              <span class="ds grn">● Confirmed</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">📺</div>
+            <div>
+              <div class="dn">Central Asian TV &amp; Media</div>
+              <div class="dd">
+                International media from Kazakhstan &amp; the region
+              </div>
+              <span class="ds grn">● Confirmed</span>
+            </div>
+          </div>
+          <div class="dc">
+            <div class="di">🎓</div>
+            <div>
+              <div class="dn">Ivy League Students</div>
+              <div class="dd">
+                Harvard, Columbia &amp; other top universities
+              </div>
+              <span class="ds grn">● Confirmed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section class="involved" id="involved">
+      <div class="wrap">
+        <div class="tag rev" style="display: block; text-align: center">
+          Join the Summit
+        </div>
+        <h2 class="rev" style="text-align: center">
+          Get<br /><em>Involved.</em>
+        </h2>
+        <p class="sub rev" style="text-align: center; margin: 0 auto 0">
+          Whether you want to speak, sponsor, or simply connect — there's a
+          place for you at this summit. Reach out and let's build something
+          together.
+        </p>
+        <div class="inv-btns rev">
+          <a href="https://www.americancabusiness.com/applyforsponsorship">
+            <button class="inv-btn primary">Become a Speaker →</button>
+          </a>
+          <a href="https://www.americancabusiness.com/sponsors">
+            <button class="inv-btn secondary">Become a Sponsor →</button>
+          </a>
+          <a href="https://www.americancabusiness.com/contactus">
+            <button class="inv-btn ghost">Contact Us</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <div class="wrap">
+        <div class="tag rev">FAQ</div>
+        <h2 class="rev" style="margin-bottom: 36px">Quick <em>Answers.</em></h2>
+        <div class="fl rev">
+          <div class="fi">
+            <button class="fq">
+              Who is this event for? <span class="fi-icon">+</span>
+            </button>
+            <div class="fa">
+              Anyone who wants to start, scale, or future-proof their career
+              using AI. All backgrounds welcome. The event is bilingual (English
+              &amp; Russian) and open to everyone.
+            </div>
+          </div>
+          <div class="fi">
+            <button class="fq">
+              Do I need business or AI experience?
+              <span class="fi-icon">+</span>
+            </button>
+            <div class="fa">
+              Zero experience needed. Sessions are designed to meet you where
+              you are and give you practical tools you can use immediately —
+              whether you're just starting or already running a business.
+            </div>
+          </div>
+          <div class="fi">
+            <button class="fq">
+              Is this part of AI Week New York? <span class="fi-icon">+</span>
+            </button>
+            <div class="fa">
+              Yes. This is an official #AIWeekNewYork event, part of the
+              citywide AI festival by Pulse NYC running May 11–17, 2026. We kick
+              off the week on May 9th.
+            </div>
+          </div>
+          <div class="fi">
+            <button class="fq">
+              Will there be Russian language support?
+              <span class="fi-icon">+</span>
+            </button>
+            <div class="fa">
+              Yes. The event is fully bilingual — English and Russian — with
+              AI-powered live translation throughout the day.
+            </div>
+          </div>
+          <div class="fi">
+            <button class="fq">
+              Where is the venue? <span class="fi-icon">+</span>
+            </button>
+            <div class="fa">
+              Chelsea, New York City — easy subway access. Exact address and
+              travel details sent to all registered attendees closer to the
+              date.
+            </div>
+          </div>
+          <div class="fi">
+            <button class="fq">
+              What is the refund policy? <span class="fi-icon">+</span>
+            </button>
+            <div class="fa">
+              Tickets are non-refundable but fully transferable. Contact us at
+              americancabusiness.com to arrange a transfer.
+            </div>
+          </div>
+          <div class="fi">
+            <button class="fq">
+              Is there a student discount? <span class="fi-icon">+</span>
+            </button>
+            <div class="fa">
+              Yes — just $30 with a valid student ID at check-in. Extremely
+              limited spots, so grab yours early.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <div class="fcta">
+      <div class="wsm" style="text-align: center">
+        <div
+          class="tag"
+          style="display: flex; justify-content: center; margin-bottom: 12px"
+        >
+          May 9 · Chelsea, NYC · #AIWeekNewYork
+        </div>
+        <h2>AI. Business. Community.<br /><em>All in One Day.</em></h2>
+        <p class="sub" style="margin: 16px auto 40px">
+          270 entrepreneurs, founders, and professionals. Real AI strategy. Real
+          funding. Real connections. Hosted by ACABA — open to everyone serious
+          about building.
+        </p>
+        <a
+          href="#tickets"
+          class="btn-g"
+          style="font-size: 14px; padding: 18px 52px"
+          >Yes — I'm In. Secure My Seat →</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        <strong style="color: rgba(0, 194, 255, 0.4)"
+          >AI &amp; Business Scaling Summit NYC 2026</strong
+        ><br />
+        Hosted by American Central Asian Business Alliance (ACABA) · Open to
+        All<br />
+        May 9, 2026 · Chelsea, New York City · 9:00 AM – 5:00 PM · English &amp;
+        Russian<br />
+        <a href="https://www.americancabusiness.com">americancabusiness.com</a>
+        ·
+        <a href="https://instagram.com/centralasian.expo">@centralasian.expo</a
+        ><br />
+        © 2026 Central Asian Expo LLC · Official #AIWeekNewYork Event by Pulse
+        NYC
+      </p>
+    </footer>
+
+    <script>
+      // Countdown
+      const t = new Date("2026-05-09T09:00:00");
+      function tick() {
+        const d = t - new Date();
+        if (d <= 0) return;
+        document.getElementById("dd").textContent = String(
+          Math.floor(d / 86400000),
+        ).padStart(2, "0");
+        document.getElementById("dh").textContent = String(
+          Math.floor((d % 86400000) / 3600000),
+        ).padStart(2, "0");
+        document.getElementById("dm").textContent = String(
+          Math.floor((d % 3600000) / 60000),
+        ).padStart(2, "0");
+        document.getElementById("ds").textContent = String(
+          Math.floor((d % 60000) / 1000),
+        ).padStart(2, "0");
+      }
+      tick();
+      setInterval(tick, 1000);
+
+      // Scroll reveal
+      const obs = new IntersectionObserver(
+        (en) => {
+          en.forEach((e, i) => {
+            if (e.isIntersecting) {
+              setTimeout(() => e.target.classList.add("vis"), i * 60);
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.06 },
+      );
+      document.querySelectorAll(".rev").forEach((el) => obs.observe(el));
+
+      // FAQ
+      document.querySelectorAll(".fq").forEach((b) => {
+        b.addEventListener("click", () => {
+          const it = b.parentElement,
+            op = it.classList.contains("open");
+          document
+            .querySelectorAll(".fi")
+            .forEach((i) => i.classList.remove("open"));
+          if (!op) it.classList.add("open");
+        });
+      });
+
+      // Modal
+      const titles = {
+        speaker: [
+          "Apply to Speak",
+          "Tell us about yourself and your speaking experience.",
+        ],
+        sponsor: [
+          "Become a Sponsor",
+          "Tell us about your brand and sponsorship goals.",
+        ],
+        contact: [
+          "Contact Us",
+          "Our team will get back to you within 48 hours.",
+        ],
+        ticket: [
+          "Get Your Ticket",
+          "Complete the form and we'll send details to your inbox.",
+        ],
+      };
+      function openModal(type) {
+        const [title, sub] = titles[type] || titles.contact;
+        document.getElementById("modal-title").textContent = title;
+        document.getElementById("modal-sub").textContent = sub;
+        document.getElementById("modal-form").style.display = "flex";
+        document.getElementById("success-msg").style.display = "none";
+        const sel = document.getElementById("f-type");
+        if (type === "speaker") sel.value = "Becoming a Speaker";
+        else if (type === "sponsor") sel.value = "Becoming a Sponsor";
+        else sel.value = "";
+        document.getElementById("modal").classList.add("open");
+      }
+      function closeModal() {
+        document.getElementById("modal").classList.remove("open");
+      }
+      document.getElementById("modal").addEventListener("click", (e) => {
+        if (e.target === e.currentTarget) closeModal();
+      });
+      function submitForm() {
+        const name = document.getElementById("f-name").value.trim();
+        const email = document.getElementById("f-email").value.trim();
+        if (!name || !email) {
+          alert("Please fill in your name and email.");
+          return;
+        }
+        const type =
+          document.getElementById("f-type").value || "General Inquiry";
+        const msg = document.getElementById("f-msg").value;
+        const mailto = `mailto:info@americancabusiness.com?subject=${encodeURIComponent(type + " — ACABA Summit NYC 2026")}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nCompany: " + document.getElementById("f-co").value + "\nType: " + type + "\n\n" + msg)}`;
+        window.location.href = mailto;
+        document.getElementById("modal-form").style.display = "none";
+        document.getElementById("success-msg").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
