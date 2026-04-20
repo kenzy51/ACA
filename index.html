@@ -387,6 +387,1374 @@
         line-height: 1.7;
       }
 
+      /* WHAT YOU LEARN — panels */
+      .learn {
+        background: #080f1e;
+      }
+      .panel-block {
+        margin-bottom: 52px;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        overflow: hidden;
+      }
+      .panel-block:last-child {
+        margin-bottom: 0;
+      }
+      .pb-head {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 28px 36px;
+        background: rgba(255, 255, 255, 0.03);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      .pb-tag {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        flex-shrink: 0;
+      }
+      .panel-ai .pb-tag {
+        background: rgba(0, 194, 255, 0.1);
+        color: #00c2ff;
+        border: 1px solid rgba(0, 194, 255, 0.2);
+      }
+      .panel-cap .pb-tag {
+        background: rgba(212, 149, 42, 0.1);
+        color: #d4952a;
+        border: 1px solid rgba(212, 149, 42, 0.2);
+      }
+      .panel-com .pb-tag {
+        background: rgba(74, 222, 128, 0.08);
+        color: #4ade80;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+      }
+      .panel-feat .pb-tag {
+        background: rgba(251, 191, 36, 0.08);
+        color: #fbbf24;
+        border: 1px solid rgba(251, 191, 36, 0.2);
+      }
+      .pb-title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(20px, 3vw, 30px);
+        letter-spacing: 0.5px;
+        line-height: 1.1;
+      }
+      .pb-dur {
+        margin-left: auto;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.25);
+        font-weight: 600;
+        letter-spacing: 1px;
+        white-space: nowrap;
+      }
+      .pb-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+      .pb-col {
+        padding: 28px 36px;
+      }
+      .pb-col + .pb-col {
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .pb-col-t {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.25);
+        margin-bottom: 16px;
+      }
+      .learn-list {
+        list-style: none;
+      }
+      .learn-list li {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.68);
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        line-height: 1.5;
+      }
+      .learn-list li:last-child {
+        border: none;
+      }
+      .arr {
+        flex-shrink: 0;
+        margin-top: 1px;
+      }
+      .panel-ai .arr {
+        color: #00c2ff;
+      }
+      .panel-cap .arr {
+        color: #d4952a;
+      }
+      .panel-com .arr {
+        color: #4ade80;
+      }
+      .panel-feat .arr {
+        color: #fbbf24;
+      }
+      .spk-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .spk-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 5px 12px;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .spk-chip .dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .ai-dot {
+        background: #00c2ff;
+      }
+      .cap-dot {
+        background: #d4952a;
+      }
+      .com-dot {
+        background: #4ade80;
+      }
+      .feat-dot {
+        background: #fbbf24;
+      }
+      .spk-chip.pend {
+        border-style: dashed;
+        opacity: 0.5;
+      }
+
+      /* GET */
+      .get {
+        background: #060d1a;
+      }
+      .g2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 18px;
+      }
+      .gc {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 32px 28px;
+        transition: 0.3s;
+      }
+      .gc:hover {
+        border-color: rgba(212, 149, 42, 0.3);
+        transform: translateY(-3px);
+      }
+      .gn {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 48px;
+        color: rgba(212, 149, 42, 0.12);
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .gt {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .gd {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.7;
+      }
+
+      /* SPEAKERS */
+      .spk-sec {
+        background: #080f1e;
+      }
+
+      /* Featured speaker */
+      .feat-spk {
+        background: linear-gradient(
+          135deg,
+          rgba(251, 191, 36, 0.06),
+          rgba(212, 149, 42, 0.04)
+        );
+        border: 1px solid rgba(251, 191, 36, 0.25);
+        padding: 40px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 40px;
+        position: relative;
+        overflow: hidden;
+      }
+      .feat-spk::before {
+        content: "FEATURED SPEAKER";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fbbf24;
+        color: #080f1e;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        text-align: center;
+      }
+      .feat-av {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          rgba(251, 191, 36, 0.25),
+          rgba(17, 31, 53, 0.9)
+        );
+        border: 2px solid rgba(251, 191, 36, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 26px;
+        color: #fbbf24;
+        flex-shrink: 0;
+        margin-top: 8px;
+      }
+      .feat-spk-name {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(24px, 4vw, 36px);
+        letter-spacing: 0.5px;
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+      .feat-spk-role {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.6;
+        margin-bottom: 12px;
+      }
+      .feat-spk-desc {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.7;
+      }
+
+      .sg {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 14px;
+      }
+      .sk {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 26px 18px;
+        text-align: center;
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+      }
+      .sk:hover {
+        border-color: rgba(212, 149, 42, 0.35);
+        transform: translateY(-4px);
+      }
+      .sk-panel-tag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 8px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        text-align: center;
+      }
+      .ai-tag {
+        background: rgba(0, 194, 255, 0.15);
+        color: #00c2ff;
+      }
+      .cap-tag {
+        background: rgba(212, 149, 42, 0.15);
+        color: #d4952a;
+      }
+      .com-tag {
+        background: rgba(74, 222, 128, 0.1);
+        color: #4ade80;
+      }
+      .av {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 194, 255, 0.2),
+          rgba(17, 31, 53, 0.9)
+        );
+        border: 2px solid rgba(0, 194, 255, 0.15);
+        margin: 0 auto 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 20px;
+        color: #00c2ff;
+      }
+      .av.g-av {
+        border-color: rgba(212, 149, 42, 0.3);
+        background: linear-gradient(
+          135deg,
+          rgba(212, 149, 42, 0.15),
+          rgba(17, 31, 53, 0.9)
+        );
+      }
+      .av.g-av span,
+      .av.g-av {
+        color: #d4952a;
+      }
+      .av.grn-av {
+        border-color: rgba(74, 222, 128, 0.3);
+        background: linear-gradient(
+          135deg,
+          rgba(74, 222, 128, 0.1),
+          rgba(17, 31, 53, 0.9)
+        );
+      }
+      .av.grn-av span {
+        color: #4ade80;
+      }
+      .sn {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        line-height: 1.2;
+      }
+      .sr2 {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.32);
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .bd {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 3px 9px;
+        display: inline-block;
+      }
+      .ok {
+        color: #4ade80;
+        border: 1px solid rgba(74, 222, 128, 0.2);
+      }
+      .pnd {
+        color: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .sk2 {
+        color: #fbbf24;
+        border: 1px solid rgba(251, 191, 36, 0.2);
+      }
+
+      /* SPONSORS */
+      .sponsors {
+        background: #060d1a;
+        padding: 72px 24px;
+      }
+      .sp-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .sp-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 28px 36px;
+        border-right: 1px solid rgba(255, 255, 255, 0.06);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        flex: 1;
+        min-width: 170px;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.01);
+      }
+      .sp-item:hover {
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .sp-icon {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+      .sp-name {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.55);
+        text-align: center;
+        line-height: 1.2;
+      }
+      .sp-type {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.18);
+        margin-top: 4px;
+        text-align: center;
+      }
+
+      /* FOR YOU */
+      .fy {
+        background: #060d1a;
+      }
+      .fyg {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 12px;
+      }
+      .fyc {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: 0.3s;
+      }
+      .fyc:hover {
+        border-color: rgba(0, 194, 255, 0.2);
+      }
+      .chk {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: rgba(74, 222, 128, 0.08);
+        border: 1px solid rgba(74, 222, 128, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4ade80;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 2px;
+      }
+      .fyt {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      /* DELEGATIONS */
+      .del {
+        background: #080f1e;
+      }
+      .dg {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 10px;
+      }
+      .dc {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 20px;
+        transition: 0.3s;
+      }
+      .dc:hover {
+        border-color: rgba(0, 194, 255, 0.18);
+      }
+      .di {
+        font-size: 22px;
+        flex-shrink: 0;
+      }
+      .dn {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+      .dd {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.3);
+        line-height: 1.4;
+      }
+      .ds {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-top: 5px;
+        display: inline-block;
+      }
+      .grn {
+        color: #4ade80;
+      }
+      .yllw {
+        color: #fbbf24;
+      }
+
+      /* URGENCY */
+      .urg {
+        background: linear-gradient(
+          135deg,
+          rgba(192, 57, 43, 0.12),
+          rgba(212, 149, 42, 0.07)
+        );
+        border-top: 1px solid rgba(192, 57, 43, 0.2);
+        border-bottom: 1px solid rgba(192, 57, 43, 0.2);
+        padding: 52px 24px;
+        text-align: center;
+      }
+      .urg h3 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(30px, 5vw, 56px);
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+      .urg p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.52);
+        margin-bottom: 24px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* TICKETS */
+      .tix {
+        background: #0d1929;
+      }
+      .tg {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 0;
+        align-items: start;
+      }
+      .tk {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        padding: 40px 32px;
+        transition: 0.3s;
+        position: relative;
+      }
+      .tk:hover {
+        border-color: rgba(212, 149, 42, 0.28);
+      }
+      .tk.hot {
+        background: rgba(212, 149, 42, 0.06);
+        border-color: #d4952a;
+        transform: scale(1.03);
+        z-index: 1;
+        box-shadow: 0 0 56px rgba(212, 149, 42, 0.1);
+      }
+      .tkbdg {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #d4952a;
+        color: #080f1e;
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 4px 16px;
+        white-space: nowrap;
+      }
+      .tktier {
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #d4952a;
+        margin-bottom: 16px;
+      }
+      .tk:not(.hot) .tktier {
+        color: rgba(255, 255, 255, 0.28);
+      }
+      .tkp {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 66px;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+      .tkp sup {
+        font-size: 32px;
+        vertical-align: top;
+        margin-top: 9px;
+        display: inline-block;
+      }
+      .tkd {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.36);
+        margin-bottom: 22px;
+        line-height: 1.6;
+        min-height: 40px;
+      }
+      .tkdiv {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.06);
+        margin-bottom: 20px;
+      }
+      .tkl {
+        list-style: none;
+        margin-bottom: 28px;
+      }
+      .tkl li {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.68);
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        line-height: 1.4;
+      }
+      .tkl li:last-child {
+        border: none;
+      }
+      .ck {
+        color: #d4952a;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .ck.d {
+        color: rgba(255, 255, 255, 0.18);
+      }
+      .tkbtn {
+        display: block;
+        text-align: center;
+        padding: 14px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        transition: 0.2s;
+        cursor: pointer;
+        border: none;
+        width: 100%;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .bg {
+        background: #d4952a;
+        color: #080f1e;
+      }
+      .bg:hover {
+        background: #f0b445;
+      }
+      .gh {
+        background: transparent;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      .gh:hover {
+        border-color: #00c2ff;
+        color: #00c2ff;
+      }
+      .tknote {
+        text-align: center;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.2);
+        margin-top: 10px;
+      }
+
+      /* GET INVOLVED */
+      .involved {
+        background: linear-gradient(
+          160deg,
+          rgba(0, 194, 255, 0.06),
+          rgba(212, 149, 42, 0.04),
+          rgba(8, 15, 30, 0.9)
+        );
+        padding: 88px 24px;
+        text-align: center;
+      }
+      .inv-btns {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      .inv-btn {
+        padding: 16px 36px;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        display: inline-block;
+      }
+      .inv-btn.primary {
+        background: #d4952a;
+        color: #080f1e;
+        box-shadow: 0 4px 28px rgba(212, 149, 42, 0.25);
+      }
+      .inv-btn.primary:hover {
+        background: #f0b445;
+        transform: translateY(-2px);
+      }
+      .inv-btn.secondary {
+        background: transparent;
+        color: #00c2ff;
+        border: 1px solid rgba(0, 194, 255, 0.3);
+      }
+      .inv-btn.secondary:hover {
+        background: rgba(0, 194, 255, 0.06);
+        border-color: #00c2ff;
+      }
+      .inv-btn.ghost {
+        background: transparent;
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .inv-btn.ghost:hover {
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* FAQ */
+      .faq {
+        background: #060d1a;
+      }
+      .fl {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        max-width: 720px;
+      }
+      .fi {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .fq {
+        width: 100%;
+        background: none;
+        border: none;
+        color: #fff;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        padding: 20px 24px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+      }
+      .fq:hover {
+        color: #00c2ff;
+      }
+      .fi-icon {
+        font-size: 16px;
+        color: #00c2ff;
+        flex-shrink: 0;
+        transition: transform 0.25s;
+      }
+      .fa {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.35s ease,
+          padding 0.25s;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.48);
+        line-height: 1.75;
+        padding: 0 24px;
+      }
+      .fi.open .fa {
+        max-height: 200px;
+        padding: 0 24px 20px;
+      }
+      .fi.open .fi-icon {
+        transform: rotate(45deg);
+      }
+
+      /* MODAL */
+      .modal-bg {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s;
+      }
+      .modal-bg.open {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .modal {
+        background: #0d1929;
+        border: 1px solid rgba(0, 194, 255, 0.2);
+        padding: 48px;
+        max-width: 520px;
+        width: 100%;
+        position: relative;
+      }
+      .modal h3 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 36px;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+      }
+      .modal p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.4);
+        margin-bottom: 28px;
+      }
+      .modal-close {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .modal-close:hover {
+        color: #fff;
+      }
+      .mf {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .mf input,
+      .mf select,
+      .mf textarea {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: #fff;
+        padding: 14px 16px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 13px;
+        outline: none;
+        transition: 0.2s;
+        width: 100%;
+      }
+      .mf input:focus,
+      .mf select:focus,
+      .mf textarea:focus {
+        border-color: rgba(0, 194, 255, 0.4);
+      }
+      .mf select option {
+        background: #0d1929;
+      }
+      .mf textarea {
+        resize: vertical;
+        min-height: 90px;
+      }
+      .mf .sub-btn {
+        background: #d4952a;
+        color: #080f1e;
+        border: none;
+        padding: 15px;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        transition: 0.2s;
+      }
+      .mf .sub-btn:hover {
+        background: #f0b445;
+      }
+      .success-msg {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        color: #4ade80;
+        font-weight: 600;
+      }
+
+      .fcta {
+        background: linear-gradient(
+          160deg,
+          rgba(0, 194, 255, 0.05),
+          rgba(212, 149, 42, 0.05),
+          rgba(8, 15, 30, 0.9)
+        );
+        border-top: 1px solid rgba(0, 194, 255, 0.1);
+        padding: 88px 24px;
+        text-align: center;
+      }
+
+      footer {
+        background: #030810;
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+        padding: 44px 24px;
+        text-align: center;
+      }
+      footer p {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.18);
+        line-height: 2;
+      }
+      footer a {
+        color: rgba(0, 194, 255, 0.4);
+      }
+      footer a:hover {
+        color: #00c2ff;
+      }
+
+      .rev {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+      .rev.vis {
+        opacity: 1;
+        transform: none;
+      }
+
+      @media (max-width: 680px) {
+        nav {
+          padding: 12px 16px;
+        }
+        .nav-tag {
+          display: none;
+        }
+        section {
+          padding: 64px 16px;
+        }
+        .hero {
+          padding: 110px 16px 60px;
+        }
+        .stat {
+          padding: 12px 16px;
+          border-right: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        .stat:last-child {
+          border-bottom: none;
+        }
+        .pb-body {
+          grid-template-columns: 1fr;
+        }
+        .pb-col + .pb-col {
+          border-left: none;
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .tk.hot {
+          transform: none;
+        }
+        .tg {
+          grid-template-columns: 1fr;
+        }
+        .feat-spk {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .feat-av {
+          margin: 0 auto;
+        }
+      }
+    </style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background: #080f1e;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 40px;
+        background: rgba(8, 15, 30, 0.97);
+        border-bottom: 1px solid rgba(0, 194, 255, 0.12);
+      }
+      .logo {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 17px;
+        letter-spacing: 2px;
+        color: #fff;
+      }
+      .logo span {
+        color: #00c2ff;
+        font-size: 10px;
+        display: block;
+        letter-spacing: 2px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+      }
+      .nav-r {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .nav-tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #00c2ff;
+        border: 1px solid rgba(0, 194, 255, 0.3);
+        padding: 6px 12px;
+      }
+      .nav-cta {
+        background: #d4952a;
+        color: #080f1e;
+        font-weight: 800;
+        font-size: 11px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 10px 22px;
+      }
+      .nav-cta:hover {
+        background: #f0b445;
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 130px 24px 80px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hbg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse 90% 50% at 50% 0,
+            rgba(0, 194, 255, 0.07) 0,
+            transparent 60%
+          ),
+          linear-gradient(180deg, #080f1e, #050c18);
+      }
+      .hgrid {
+        position: absolute;
+        inset: 0;
+        opacity: 0.025;
+        background-image:
+          linear-gradient(rgba(0, 194, 255, 1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 194, 255, 1) 1px, transparent 1px);
+        background-size: 60px 60px;
+      }
+      .hero-in {
+        position: relative;
+        z-index: 1;
+        max-width: 900px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(0, 194, 255, 0.08);
+        border: 1px solid rgba(0, 194, 255, 0.25);
+        color: #00c2ff;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 8px 18px;
+        margin-bottom: 24px;
+      }
+      .pulse {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #00c2ff;
+        animation: blink 1.2s ease infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.2;
+        }
+      }
+      .eyebrow {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #f0b445;
+        margin-bottom: 18px;
+      }
+      h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(58px, 10vw, 115px);
+        line-height: 0.88;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+      }
+      h1 .g {
+        color: #f0b445;
+      }
+      h1 .c {
+        color: #00c2ff;
+      }
+      .hero-p {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.7;
+        max-width: 640px;
+        margin: 0 auto 14px;
+      }
+      .hero-p strong {
+        color: #fff;
+      }
+      .bilingual {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: rgba(255, 255, 255, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 5px 14px;
+        margin-bottom: 36px;
+      }
+      .stats {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 1px solid rgba(255, 255, 255, 0.07);
+        margin-bottom: 40px;
+      }
+      .stat {
+        padding: 16px 28px;
+        border-right: 1px solid rgba(255, 255, 255, 0.07);
+        text-align: center;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .stat:last-child {
+        border-right: none;
+      }
+      .stat-v {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 26px;
+        letter-spacing: 1px;
+      }
+      .stat-v.c {
+        color: #00c2ff;
+      }
+      .stat-v.g {
+        color: #f0b445;
+      }
+      .stat-l {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.4);
+        margin-top: 3px;
+      }
+      .btns {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn-g {
+        background: #d4952a;
+        color: #080f1e;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 16px 44px;
+        display: inline-block;
+        box-shadow: 0 4px 28px rgba(212, 149, 42, 0.3);
+        transition: 0.2s;
+        cursor: pointer;
+        border: none;
+      }
+      .btn-g:hover {
+        background: #f0b445;
+        transform: translateY(-2px);
+      }
+      .btn-o {
+        background: transparent;
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 16px 36px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        display: inline-block;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+      .btn-o:hover {
+        border-color: #00c2ff;
+        color: #00c2ff;
+      }
+
+      .cd {
+        background: #0d1929;
+        border-top: 1px solid rgba(0, 194, 255, 0.12);
+        border-bottom: 1px solid rgba(0, 194, 255, 0.12);
+        padding: 28px 24px;
+        text-align: center;
+      }
+      .cd-l {
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #00c2ff;
+        margin-bottom: 16px;
+      }
+      .cd-row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .cdu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cdn {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 50px;
+        line-height: 1;
+        color: #fff;
+        min-width: 66px;
+        text-align: center;
+        background: rgba(0, 194, 255, 0.05);
+        border: 1px solid rgba(0, 194, 255, 0.12);
+        padding: 8px 4px;
+      }
+      .cdl {
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(0, 194, 255, 0.6);
+        margin-top: 5px;
+      }
+      .cds {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 42px;
+        color: rgba(0, 194, 255, 0.2);
+        padding-bottom: 20px;
+      }
+
+      section {
+        padding: 88px 24px;
+      }
+      .wrap {
+        max-width: 1060px;
+        margin: 0 auto;
+      }
+      .wsm {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .tag {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #00c2ff;
+        margin-bottom: 12px;
+      }
+      h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: clamp(38px, 6vw, 68px);
+        line-height: 0.95;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+      }
+      h2 em {
+        font-style: normal;
+        color: #f0b445;
+      }
+      h2 .c {
+        color: #00c2ff;
+      }
+      .sub {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.75;
+        margin-bottom: 52px;
+        max-width: 540px;
+      }
+
+      /* PAIN */
+      .pain {
+        background: #060d1a;
+      }
+      .g3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 2px;
+      }
+      .pc {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 36px 28px;
+        border-top: 3px solid transparent;
+        transition: 0.3s;
+      }
+      .pc:hover {
+        background: rgba(0, 194, 255, 0.04);
+        border-top-color: #00c2ff;
+      }
+      .pi {
+        font-size: 28px;
+        margin-bottom: 14px;
+      }
+      .pq {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 10px;
+      }
+      .pa {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.42);
+        line-height: 1.7;
+      }
+
       /* GET */
       .get {
         background: #080f1e;
@@ -1418,18 +2786,27 @@
 
     <!-- HERO -->
     <section class="hero">
-<div class="hbg" style="
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background: linear-gradient(to bottom, rgba(5, 10, 24, 0.6), rgba(5, 10, 24, 0.9)), 
-                url('background.png'); /* CHANGE THIS TO YOUR BG FILENAME */
-    background-size: cover; 
-    background-position: center; 
-    z-index: 1;
-  "></div>      <div class="hgrid"></div>
+      <div
+        class="hbg"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background:
+            linear-gradient(
+              to bottom,
+              rgba(5, 10, 24, 0.6),
+              rgba(5, 10, 24, 0.9)
+            ),
+            url(&quot;background.png&quot;); /* CHANGE THIS TO YOUR BG FILENAME */
+          background-size: cover;
+          background-position: center;
+          z-index: 1;
+        "
+      ></div>
+      <div class="hgrid"></div>
       <div class="hero-in">
         <div class="badge">
           <span class="pulse"></span>#AIWeekNewYork · Hosted by ACABA · May 9,
@@ -1644,212 +3021,336 @@
     </section>
 
     <!-- SESSIONS -->
-    <section class="sessions" id="sessions">
+    <section class="learn" id="learn">
       <div class="wrap">
         <div class="tag rev">The Program — May 9, 2026</div>
-        <h2 class="rev">Four Sessions.<br /><em>AI Meets Business.</em></h2>
+        <h2 class="rev">
+          Three Panels.<br /><em>One Day That Changes Everything.</em>
+        </h2>
         <p class="sub rev">
-          Capital. AI. Community. Keynotes. Every session is designed to give
-          you something you can execute immediately.
+          Each panel is a masterclass — not a sales pitch. Real people. Specific
+          answers. Tactics you can use the moment you walk out.
         </p>
-        <div class="slist rev">
-          <div class="sr">
-            <div class="snum">01</div>
-            <div>
-              <div class="spill gold">Capital Panel</div>
-              <div class="st">
-                Business Capital: Fund, Scale &amp; Grow in America
-              </div>
-              <div class="sd">
-                This is the panel that changes everything. We're bringing
-                together the full capital ecosystem in one room — angel
-                investors, grant experts, SBA-backed advisors, insurance
-                strategists, and entrepreneurs who've already built
-                million-dollar businesses. Whether you're pre-revenue or scaling
-                past your first million, this panel is designed to get your
-                company investment-ready, fundable, and built to last. No
-                gatekeeping. No jargon. Just the people, strategies, and
-                resources that actually move money.
-              </div>
-              <div class="spks">
-                <span class="sp"
-                  ><span class="dot"></span>Senior Representative, SCORE — U.S.
-                  SBA Partner</span
-                >
-                <span class="sp"
-                  ><span class="dot"></span>Senior Executive, New York Life
-                  Insurance</span
-                >
-                <span class="sp d"
-                  ><span class="dot d"></span>Angel Investor (Confirming)</span
-                >
-                <span class="sp d"
-                  ><span class="dot d"></span>$1M+ Entrepreneur
-                  (Confirming)</span
-                >
-              </div>
-            </div>
-            <div class="sr-t">PANEL</div>
-          </div>
 
-          <div class="sr">
-            <div class="snum">02</div>
-            <div>
-              <div class="spill">AI Panel</div>
-              <div class="st">
-                AI &amp; The Future of Business: Use It or Lose to It
-              </div>
-              <div class="sd">
-                Featuring a Stanford GSB and Harvard Kennedy School graduate who
-                has helped hundreds of founders enter Silicon Valley and secure
-                global funding. This panel cuts through AI hype with real tools
-                to automate, market, and grow — zero tech background required.
-              </div>
-              <div class="spks">
-                <span class="sp"
-                  ><span class="dot"></span>Asset Abdualiyev — Co-Founder &amp;
-                  CEO, Silkroad Innovation Hub</span
-                >
-                <span class="sp d"></span>
-                  
-                  <span class="dot d"></span>Marina Mogilko — Pending (Silicon
-                  Valley Girl / LinguaTrip)</span
-                >
-              </div>
-            </div>
-            <div class="sr-t">PANEL</div>
+        <!-- AI PANEL -->
+        <div class="panel-block panel-ai rev">
+          <div class="pb-head">
+            <div class="pb-tag">AI Panel · 90 min</div>
+            <div class="pb-title">AI: The Opportunity in Front of You</div>
+            <div class="pb-dur">90 MIN</div>
           </div>
-
-          <div class="sr">
-            <div class="snum">03</div>
-            <div>
-              <div class="spill">Community Panel</div>
-              <div class="st">Community Is the New Currency</div>
-              <div class="sd">
-                In a world where AI levels the technical playing field,
-                relationships become your ultimate competitive advantage. Learn
-                to build community that compounds into real capital,
-                opportunity, and long-term business leverage.
-              </div>
-              <div class="spks">
-                <span class="sp d"
-                  ><span class="dot d"></span>Speakers to be announced</span
+          <div class="pb-body">
+            <div class="pb-col">
+              <div class="pb-col-t">What You Will Learn</div>
+              <ul class="learn-list">
+                <li>
+                  <span class="arr">▸</span>What separates AI founders who get
+                  funded from those who don't — from someone who's reviewed 350+
+                  startups
+                </li>
+                <li>
+                  <span class="arr">▸</span>How a Central Asian PhD engineer
+                  built an open-source AI agent competing with major players —
+                  and what that means for you
+                </li>
+                <li>
+                  <span class="arr">▸</span>The real mechanics of building an AI
+                  product: timeline, cost, and what will actually surprise you
+                </li>
+                <li>
+                  <span class="arr">▸</span>How to pivot into AI from a
+                  corporate career or traditional business — do you even need to
+                  become technical?
+                </li>
+                <li>
+                  <span class="arr">▸</span>Is "vibe coding" legit? Can a
+                  non-technical person build a real AI product with today's
+                  tools?
+                </li>
+                <li>
+                  <span class="arr">▸</span>How to add AI to an existing
+                  business — a restaurant, a logistics company, a services firm
+                  — right now
+                </li>
+                <li>
+                  <span class="arr">▸</span>What to look for in a co-founder or
+                  technical partner, and the red flags to avoid
+                </li>
+                <li>
+                  <span class="arr">▸</span>Where the real opportunities are
+                  that aren't yet overcrowded — and where to place your bet in
+                  the next 2–3 years
+                </li>
+              </ul>
+            </div>
+            <div class="pb-col">
+              <div class="pb-col-t">Speakers</div>
+              <div class="spk-row">
+                <span class="spk-chip"
+                  ><span class="dot ai-dot"></span>Asset Abdualiyev — Founder,
+                  Silkroad Innovation Hub · Stanford GSB · Harvard Kennedy
+                  School · 350+ startups · $30M+ funded</span
+                >
+                <span class="spk-chip"
+                  ><span class="dot ai-dot"></span>Yerbol Akhmetbekov — PhD
+                  Computer Science · Senior AI/ML Engineer · Open-Source AI
+                  Agent Builder · FRM</span
+                >
+                <span class="spk-chip pend"
+                  ><span class="dot ai-dot"></span>TBD — AI Founder /
+                  Operator</span
                 >
               </div>
             </div>
-            <div class="sr-t">PANEL</div>
           </div>
+        </div>
 
-          <div class="sr">
-            <div class="snum">04</div>
-            <div>
-              <div class="spill gold">Keynote</div>
-              <div class="st">Keynote Presenters</div>
-              <div class="sd">
-                Closing keynotes from entrepreneurs and leaders who've built
-                something extraordinary — real stories, real numbers, and a
-                vision that sends you home ready to execute.
-              </div>
-              <div class="spks">
-                <span class="sp d"
-                  ><span class="dot d"></span>Keynote speakers to be
-                  announced</span
+        <!-- CAPITAL PANEL -->
+        <div class="panel-block panel-cap rev">
+          <div class="pb-head">
+            <div class="pb-tag">Capital Panel · 70 min</div>
+            <div class="pb-title">
+              Business Capital: Fund, Grow &amp; Scale in America
+            </div>
+            <div class="pb-dur">70 MIN</div>
+          </div>
+          <div class="pb-body">
+            <div class="pb-col">
+              <div class="pb-col-t">What You Will Learn</div>
+              <ul class="learn-list">
+                <li>
+                  <span class="arr">▸</span>Why most businesses stay small — and
+                  the one shift that separates entrepreneurs who scale from
+                  those who don't
+                </li>
+                <li>
+                  <span class="arr">▸</span>Free SBA and SCORE resources most
+                  entrepreneurs never find — including funding paths they don't
+                  know exist
+                </li>
+                <li>
+                  <span class="arr">▸</span>A real walkthrough of your options
+                  at $200K–$500K revenue: SBA loans, lines of credit, angel
+                  investors, bootstrapping — what fits and what you need ready
+                </li>
+                <li>
+                  <span class="arr">▸</span>Why protecting your business is part
+                  of scaling — not separate from it — and at what stage it
+                  becomes critical
+                </li>
+                <li>
+                  <span class="arr">▸</span>The cultural trap: is refusing
+                  outside money smart or what's keeping you small?
+                </li>
+                <li>
+                  <span class="arr">▸</span>How to professionalize informal
+                  community lending — loans between friends, family money,
+                  handshake deals
+                </li>
+                <li>
+                  <span class="arr">▸</span>The one decision, resource, or
+                  mindset shift that took real businesses from surviving to
+                  growing
+                </li>
+                <li>
+                  <span class="arr">▸</span>One specific action you can take
+                  this month to move your business forward — from people who've
+                  done it
+                </li>
+              </ul>
+            </div>
+            <div class="pb-col">
+              <div class="pb-col-t">Speakers</div>
+              <div class="spk-row">
+                <span class="spk-chip"
+                  ><span class="dot cap-dot"></span>SCORE Representative — SBA
+                  Partner &amp; Business Mentorship</span
+                >
+                <span class="spk-chip"
+                  ><span class="dot cap-dot"></span>New York Life Senior
+                  Representative — Business Protection &amp; Insurance</span
+                >
+                <span class="spk-chip pend"
+                  ><span class="dot cap-dot"></span>TBD — Million-Dollar Revenue
+                  Entrepreneur</span
+                >
+                <span class="spk-chip pend"
+                  ><span class="dot cap-dot"></span>TBD — Million-Dollar Revenue
+                  Entrepreneur</span
                 >
               </div>
             </div>
-            <div class="sr-t">KEYNOTE</div>
+          </div>
+        </div>
+
+        <!-- COMMUNITY PANEL -->
+        <div class="panel-block panel-com rev">
+          <div class="pb-head">
+            <div class="pb-tag">Community Panel · 70 min</div>
+            <div class="pb-title">Community Is the New Currency</div>
+            <div class="pb-dur">70 MIN</div>
+          </div>
+          <div class="pb-body">
+            <div class="pb-col">
+              <div class="pb-col-t">What You Will Learn</div>
+              <ul class="learn-list">
+                <li>
+                  <span class="arr">▸</span>Concrete examples — real jobs,
+                  clients, deals, grants — that only came through community, not
+                  grinding alone
+                </li>
+                <li>
+                  <span class="arr">▸</span>How to build an audience and a
+                  business within a niche community — and why that's actually
+                  your advantage
+                </li>
+                <li>
+                  <span class="arr">▸</span>What doors open when you're
+                  connected to the right networks — and what most people in this
+                  room are leaving on the table
+                </li>
+                <li>
+                  <span class="arr">▸</span>Why Korean, Indian, and Nigerian
+                  diasporas built real economic ecosystems in the U.S. — and how
+                  Central Asians can too
+                </li>
+                <li>
+                  <span class="arr">▸</span>How AI is reshaping every industry —
+                  and why community becomes more valuable, not less, as the
+                  rules keep changing
+                </li>
+                <li>
+                  <span class="arr">▸</span>What organizing people at scale
+                  teaches you about trust, loyalty, and getting people to
+                  actually show up
+                </li>
+                <li>
+                  <span class="arr">▸</span>One specific action you can take in
+                  the next 30 days to start building with your community instead
+                  of around it
+                </li>
+              </ul>
+            </div>
+            <div class="pb-col">
+              <div class="pb-col-t">Speakers</div>
+              <div class="spk-row">
+                <span class="spk-chip"
+                  ><span class="dot com-dot"></span>Ugur Bek — NYPD Officer ·
+                  Founder, Turkic American Law Enforcement Society</span
+                >
+                <span class="spk-chip"
+                  ><span class="dot com-dot"></span>Umit Muradi — Private Equity
+                  Co-Investment, Portfolio Advisors · ex-NYC Mayor's
+                  Campaign</span
+                >
+                <span class="spk-chip"
+                  ><span class="dot com-dot"></span>Nursultan Torobaev —
+                  Co-Founder, Chicago Eurasian Hub · Software Development
+                  Engineer</span
+                >
+                <span class="spk-chip"
+                  ><span class="dot com-dot"></span>Alyona Badalova — Founder,
+                  My Way &amp; Silk Road Festival NYC</span
+                >
+                <span class="spk-chip"
+                  ><span class="dot com-dot"></span>Malika Burieva — Journalist
+                  · Adjunct Professor, Adelphi University · Content
+                  Creator</span
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SPEAKERS -->
-    <section class="spk-sec" id="speakers">
-      <div class="wrap">
-        <div class="tag rev">Speakers</div>
-        <h2 class="rev">Learn From People<br /><em>Who've Done It.</em></h2>
-        <p class="sub rev">
-          Confirmed speakers joining us May 9th. Additional speakers announced
-          weekly.
-        </p>
-        <div class="sg rev">
-          <div class="sk" style="border-color: rgba(0, 194, 255, 0.2)">
-            <div class="av"><span>AA</span></div>
-            <div class="sn">Asset Abdualiyev</div>
-            <div class="sr2">
-              Co-Founder &amp; CEO, Silkroad Innovation Hub · Stanford GSB ·
-              Harvard Kennedy School · ex-McKinsey · ex-TaskRabbit
-            </div>
-            <div class="bd ok">✓ Confirmed · AI Panel</div>
-            <div
-              class="spk-note"
-              style="
-                margin-top: 8px;
-                font-size: 11px;
-                color: rgba(0, 194, 255, 0.4);
-              "
-            >
-              Silicon Valley ecosystem builder connecting Central Eurasian
-              startups with global capital
-            </div>
-          </div>
+<section class="spk-sec" id="speakers">
+  <div class="wrap">
+    <div class="tag rev">Confirmed Speakers</div>
+    <div class="sg rev">
 
-          <div class="sk sk-star">
-            <div class="sk-kt">⭐ Featured Speaker — Pending</div>
-            <div class="av gold-av" style="margin-top: 18px">
-              <span>MM</span>
-            </div>
-            <div class="sn">Marina Mogilko</div>
-            <div class="sr2">
-              Co-Founder, LinguaTrip · Silicon Valley Girl · Official Creator,
-              World Economic Forum (Davos 2026) · Millions of YouTube
-              subscribers worldwide
-            </div>
-            <div class="bd sk2">● Pending Confirmation</div>
-            <div
-              class="spk-note"
-              style="
-                margin-top: 8px;
-                font-size: 11px;
-                color: rgba(251, 191, 36, 0.35);
-              "
-            >
-              Where media, technology, and business converge — a voice for the
-              next generation of global founders
-            </div>
-          </div>
-
-          <div class="sk">
-            <div class="av"><span>SC</span></div>
-            <div class="sn">Senior Representative, SCORE</div>
-            <div class="sr2">
-              Capital Access · Small Business Growth · Advisory · Backed by the
-              U.S. Small Business Administration
-            </div>
-            <div class="bd ok">✓ Confirmed · Capital Panel</div>
-          </div>
-
-          <div class="sk">
-            <div class="av"><span>NL</span></div>
-            <div class="sn">Senior Executive, New York Life</div>
-            <div class="sr2">
-              Financial Strategy · Business Protection · Wealth Planning · New
-              York Life Insurance Company
-            </div>
-            <div class="bd ok">✓ Confirmed · Capital Panel</div>
-          </div>
-
-          <div class="sk">
-            <div class="av" style="font-size: 24px">+</div>
-            <div class="sn">More Speakers</div>
-            <div class="sr2">
-              AI, Capital &amp; Community panelists being confirmed now
-            </div>
-            <div class="bd sk2">⟳ Announcing Soon</div>
-          </div>
-        </div>
+      <div class="sk" style="border-color:rgba(0,194,255,.15)">
+        <div class="sk-panel-tag ai-tag">AI Panel</div>
+        <div class="av" style="margin-top:18px"><span>AA</span></div>
+        <div class="sn">Asset Abdualiyev</div>
+        <div class="sr2">Founder &amp; CEO, Silkroad Innovation Hub · Stanford GSB · Harvard Kennedy School · ex-McKinsey · 350+ startups · $30M+ funded</div>
+        <div class="bd ok">✓ Confirmed</div>
       </div>
-    </section>
+
+      <div class="sk" style="border-color:rgba(0,194,255,.15)">
+        <div class="sk-panel-tag ai-tag">AI Panel</div>
+        <div class="av" style="margin-top:18px"><span>YA</span></div>
+        <div class="sn">Yerbol Akhmetbekov</div>
+        <div class="sr2">PhD Computer Science · Senior AI/ML Engineer · Open-Source AI Agent (OpenClaw Competitor) · Blockchain Developer · FRM</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk" style="border-color:rgba(212,149,42,.15)">
+        <div class="sk-panel-tag cap-tag">Capital Panel</div>
+        <div class="av g-av" style="margin-top:18px"><span>SC</span></div>
+        <div class="sn">SCORE Representative</div>
+        <div class="sr2">Capital Access · Small Business Growth · Advisory · U.S. Small Business Administration Partner</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk" style="border-color:rgba(212,149,42,.15)">
+        <div class="sk-panel-tag cap-tag">Capital Panel</div>
+        <div class="av g-av" style="margin-top:18px"><span>NL</span></div>
+        <div class="sn">New York Life Senior Rep</div>
+        <div class="sr2">Business Protection · Financial Strategy · Wealth Planning · New York Life Insurance</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk" style="border-color:rgba(74,222,128,.15)">
+        <div class="sk-panel-tag com-tag">Community Panel</div>
+        <div class="av grn-av" style="margin-top:18px"><span>UB</span></div>
+        <div class="sn">Ugur Bek</div>
+        <div class="sr2">NYPD Officer · Founder, Turkic American Law Enforcement Society</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk" style="border-color:rgba(74,222,128,.15)">
+        <div class="sk-panel-tag com-tag">Community Panel</div>
+        <div class="av grn-av" style="margin-top:18px"><span>UM</span></div>
+        <div class="sn">Umit Muradi</div>
+        <div class="sr2">Private Equity Co-Investment, Portfolio Advisors · Former NYC Mayor's Campaign</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk" style="border-color:rgba(74,222,128,.15)">
+        <div class="sk-panel-tag com-tag">Community Panel</div>
+        <div class="av grn-av" style="margin-top:18px"><span>NT</span></div>
+        <div class="sn">Nursultan Torobaev</div>
+        <div class="sr2">Co-Founder, Chicago Eurasian Hub · Software Development Engineer</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk" style="border-color:rgba(74,222,128,.15)">
+        <div class="sk-panel-tag com-tag">Community Panel</div>
+        <div class="av grn-av" style="margin-top:18px"><span>AB</span></div>
+        <div class="sn">Alyona Badalova</div>
+        <div class="sr2">Founder, My Way · Founder, Silk Road Festival NYC</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk" style="border-color:rgba(74,222,128,.15)">
+        <div class="sk-panel-tag com-tag">Community Panel</div>
+        <div class="av grn-av" style="margin-top:18px"><span>MB</span></div>
+        <div class="sn">Malika Burieva</div>
+        <div class="sr2">Journalist · Adjunct Professor, Adelphi University · Content Creator</div>
+        <div class="bd ok">✓ Confirmed</div>
+      </div>
+
+      <div class="sk">
+        <div class="av" style="font-size:24px">+</div>
+        <div class="sn">More Speakers</div>
+        <div class="sr2">AI Operator panelist &amp; additional Capital panelists being confirmed</div>
+        <div class="bd sk2">⟳ Announcing Soon</div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- FEATURED IN -->
     <section class="feat">
@@ -2110,12 +3611,13 @@
                 <span class="ck d">✓</span>Valid student ID required at check-in
               </li>
             </ul>
-            <a href="https://www.americancabusiness.com/events/ai-business-scaling-summit" target="_blank">
-                <button class="tkbtn gh">
-              Claim Student Ticket
-            </button>
+            <a
+              href="https://www.americancabusiness.com/events/ai-business-scaling-summit"
+              target="_blank"
+            >
+              <button class="tkbtn gh">Claim Student Ticket</button>
             </a>
-          
+
             <div class="tknote">⚠ Very limited — first come, first served</div>
           </div>
           <div class="tk hot">
@@ -2146,12 +3648,13 @@
                 leaders
               </li>
             </ul>
-            <a href="https://www.americancabusiness.com/events/ai-business-scaling-summit" target="_blank">
-            <button class="tkbtn bg" >
-              Secure My VIP Ticket →
-            </button>
+            <a
+              href="https://www.americancabusiness.com/events/ai-business-scaling-summit"
+              target="_blank"
+            >
+              <button class="tkbtn bg">Secure My VIP Ticket →</button>
             </a>
-          
+
             <div class="tknote">Limited seats · Reserve early</div>
           </div>
           <div class="tk">
@@ -2169,10 +3672,11 @@
               <li><span class="ck">✓</span>Complimentary coffee</li>
               <li><span class="ck">✓</span>Open networking all day</li>
             </ul>
-           <a href="https://www.americancabusiness.com/events/ai-business-scaling-summit" target="_blank">
-            <button class="tkbtn gh" >
-              Get General Ticket
-            </button>
+            <a
+              href="https://www.americancabusiness.com/events/ai-business-scaling-summit"
+              target="_blank"
+            >
+              <button class="tkbtn gh">Get General Ticket</button>
             </a>
 
             <div class="tknote">&nbsp;</div>
